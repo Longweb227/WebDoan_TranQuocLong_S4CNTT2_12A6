@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="TranQuocLong.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+</body>
+<header>
+<img src="banner-sona.png">
+</header>
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <label style="margin-bottom: 20px; font-size: 40px; text-transform: uppercase; color: #ff0000;">ĐĂNG KÝ XE ĐƯA RƯỚC TRƯỜNG SONADEZI</label>
+    </div>
+</div>
+    <form method="post" action="./RegOnlineFree.aspx" id="form1"> 
+        <div class="vung1">
+            <div class="row">
+                <div class="container">
+                    <div class="panel panel-info">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-12 col-lg-3 col-sm-3 text-right text-respon mar-top5" style="margin-top: 5px;">
+                                </div>
+                                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6" style="margin-bottom: 10px; text-align: left;">
+                                    <label class="checkbox-inline">
+                                        <input id="chkCapMoi" type="radio" name="LoaiCap" value="1" checked="checked">Cấp mới</label>
+
+                                    <label class="checkbox-inline" style="padding-right: 20px;">
+                                        <input id="chkMat" type="radio" name="LoaiCap" value="2">Mất</label>
+
+                                    <label class="checkbox-inline" style="padding-right: 20px;">
+                                        <input id="chkHong" type="radio" name="LoaiCap" value="3">Hỏng</label>
+
+                                    <label class="checkbox-inline" style="padding-right: 20px;">
+                                        <input id="chkGiahan" type="radio" name="LoaiCap" value="4">Gia hạn</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-xs-12 col-lg-3 col-sm-3 text-right text-respon mar-top5" style="margin-top: 5px;">
+                                    Họ và tên <span style="color: red">(*)</span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6">
+                                    <input style="text-transform: uppercase" type="text" id="txtHoTen" class="form-control" placeholder="Họ tên tiếng việt có dấu">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-xs-12 col-lg-3 col-sm-3 text-right text-respon mar-top5" style="margin-top: 1px;">
+                                    Giới tính<span style="color: red">(*)</span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6" style="padding: 0px 0px 10px 16px">
+                                    <label class="checkbox-inline">
+                                        <input id="chkNam" type="radio" name="gioitinh" value="1" checked="checked">Nam</label>
+
+                                    <label class="checkbox-inline" style="padding-right: 20px;">
+                                        <input id="chkNu" type="radio" name="gioitinh" value="0">Nữ</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-xs-12 col-lg-3 col-sm-3 text-right text-respon mar-top5" style="margin-top: 5px;">
+                                    Ngày sinh <span style="color: red">(*)</span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-md-5 col-xs-12 col-lg-5 col-sm-5">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control my-datepicker hasDatepicker" id="txtNgaySinh" placeholder="Ngày/Tháng/Năm" style="position: unset;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="divQuanhuyen">
+                                <div class="col-md-3 col-xs-12 col-lg-3 col-sm-3 text-right text-respon mar-top5" style="margin-top: 5px;">
+                                    Quận/Huyện <span style="color: red">(*)</span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6">
+                                    <select name="ddlQuan" id="ddlQUan" class="form-control"><option selected="selected" value="0">Chọn địa chỉ...</option><option value="A">Ba Đình</option><option value="01">Ba Vì</option><option value="BTL">Bắc Từ Liêm </option><option value="B">Cầu Giấy</option><option value="07">Chương Mỹ</option><option value="03">Đan Phượng</option><option value="C">Đông Anh</option><option value="D">Đống Đa</option><option value="E">Gia Lâm</option><option value="14">Hà Đông</option><option value="F">Hai Bà Trưng</option><option value="04">Hoài Đức</option><option value="G">Hoàn Kiếm</option><option value="H">Hoàng Mai</option><option value="HNM">HỘI NGƯỜI MÙ</option><option value="I">Long Biên</option><option value="15">Mê Linh</option><option value="12">Mỹ Đức</option><option value="NTL">Nam Từ Liêm</option><option value="10">Phú Xuyên</option><option value="02">Phúc Thọ</option><option value="05">Quốc Oai</option><option value="K">Sóc Sơn</option><option value="13">Sơn Tây</option><option value="L">Tây Hồ</option><option value="06">Thạch Thất</option><option value="08">Thanh Oai</option><option value="N">Thanh Trì</option><option value="O">Thanh Xuân</option><option value="09">Thường Tín</option><option value="M">Từ Liêm</option><option value="11">Ứng Hòa</option></select>
+                                </div>
+                            </div>
+                            <div class="row" id="divPhuongXa">
+                                <div class="col-md-3 col-xs-12 col-lg-3 col-sm-3 text-right text-respon mar-top5" style="margin-top: 5px;">
+                                    Phường/Xã <span style="color: red">(*)</span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6">
+                                    <select name="ddlPhuongXa" id="ddlPhuongXa" class="form-control"><option selected="selected" value="0">Chọn địa chỉ...</option></select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-xs-12 col-lg-3 col-sm-3 text-right text-respon mar-top5" style="margin-top: 5px;">
+                                    Đối tượng <span style="color: red">(*)</span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6">
+                                    <select name="ddlDoiTuong" id="ddlDoiTuong" class="form-control"><option selected="selected" value="0">Chọn đối tượng...</option><option value="5">Người cao tuổi
+                                    </option><option value="1">Người khuyết tật
+                                    </option><option value="2">Hộ nghèo
+                                    </option><option value="3">Người có công
+                                    </option><option value="4">Bà mẹ li hôn
+                                    </option><option value="5">Anh hùng LĐ trong TKKC
+                                    </option></select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-xs-12 col-lg-3 col-sm-3 text-right text-respon mar-top5" style="margin-top: 5px;">
+                                    Điện thoại liên hệ<span style="color: red">(*)</span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-md-5 col-xs-12 col-lg-5 col-sm-5">
+                                            <input type="text" class="form-control" id="txtDienThoai" placeholder="Số điện thoại">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-xs-12 col-lg-3 col-sm-3 text-right text-respon mar-top5" style="margin-top: 5px;">
+                                    Email liên hệ<span style="color: red">(*)</span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-md-5 col-xs-12 col-lg-5 col-sm-5">
+                                            <input type="text" class="form-control" id="txtEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="divdcdiemnhanthe" style="display: block;">
+                                <div class="col-md-3 col-xs-12 col-lg-3 col-sm-3 text-right text-respon mar-top5" style="margin-top: 5px;">
+                                    Địa chỉ đón<span style="color: red">(*)</span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Địa chỉ" id="txtAdd">
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top: 15px;">
+                                <div class="col text-center">
+                                    <button class="btn btn-primary" type="button" value="Đăng ký" id="btnDangKy" style="color: white; background-color: #E90004;" onclick="Save()">Đăng ký</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="footer-wrapper background-main">
+        <div class="container">
+            <div class="footer-section">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer - Info -->
+                        <div class="footer-info Module Module-1643"><div class="ModuleContent"><div class="footer-title">TRƯỜNG TH-THCS-THPT THÁI BÌNH DƯƠNG (IPS) </div>
+<ul>
+<li><i class="bi bi-geo-alt-fill"></i><i style="color: black;">154/20 Hưng Đạo Vương, P. Quyết Thắng, TP. Biên Hòa, Đồng Nai</i></li>
+<li><i class="bi bi-phone-fill"></i><i style="color: black;">Điện thoại: 093 294 05 15 - 02513 940 515</i></li>
+<li><i class="bi bi-envelope-fill"></i><i style="color: black;">Email: info.ips@igcschool.edu.vn </i></li>
+<li><i class="bi bi-globe-americas"></i><i style="color: black;">Website: ips.igcschool.edu.vn</i></li>
+<li><i class="bi bi-phone-fill"></i><i style="color: black;">Ban Bảo vệ Trẻ em: 0972 777 670</i></li>
+</ul></div></div>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer - Link 1 -->
+                        <div class="footer-link Module Module-1644"><div class="ModuleContent"><div class="footer-title">Môi trường học tập</div>
+<ul>
+<li>
+<i class=""></i><i style="color: black;">Cuộc Sống Học Đường</i></li>
+</li>
+<li>
+<i class=""></i><i style="color: black;">Cơ Sở Vật Chất</i></li>
+</li>
+<li>
+    <i class=""></i><i style="color: black;">Đội Ngũ Giáo Viên</i></li>
+</li>
+</ul></div></div>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer - Link 2 -->
+                        <div class="footer-link Module Module-1645"><div class="ModuleContent"><div class="footer-title">Liên kết nhanh</div>
+<ul>
+<li>
+<i class=""></i><i style="color: black;">Giới Thiệu</i></li>
+</li>
+<li>
+<i class=""></i><i style="color: black;">Chương Trình Đào Tạo</i></li>
+</li>
+<li>
+    <i class=""></i><i style="color: black;">Tuyển Sinh</i></li>
+</li>
+<li>
+    <i class=""></i><i style="color: black;">Tin Tức-Sự Kiện</i></li>
+</li>
+<li>
+    <i class=""></i><i style="color: black;">Phụ Huynh</i></li>
+</li>
+<li>
+    <i class=""></i><i style="color: black;">Liên Hệ</i></li>
+</li>
+</ul></div></div>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer - Socical -->
+                        <div class="footer-link footer-social Module Module-1647"><div class="ModuleContent"><div class="footer-title">Kết nối với chúng tôi</div>
+<ul>
+<li> <a href="https://www.facebook.com/IPSDongnai " target="_blank"> <img alt="" src="fb.png"></a></li>
+<li><a href="https://www.youtube.com/channel/UCWhKTSa_6_GK6YLrKtwkp1A " target="_blank"><img alt="" src="yt.png"></a></li>
+<li><a href="https://zalo.me/2645464009094029676" target="_blank"> <img alt="" src="zl.png"></a></li>
+</ul></div></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Footer - Copyright -->
+            <div class="footer-copyright Module Module-1648"><div class="tapdoan"><p>© TẬP ĐOÀN GIÁO DỤC IGC</p></div></div>
+        </div>
+    </div>      
+</form>
+</body>
+    </html>
